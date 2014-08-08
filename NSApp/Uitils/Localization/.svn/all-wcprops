@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/foreveross/!svn/ver/3101/trunk/58-xhweixin/CSMBP_IOS/CSMBP/NewCSMBP/Util/Localization
+END
+CustomLocalizedString.m
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/foreveross/!svn/ver/3101/trunk/58-xhweixin/CSMBP_IOS/CSMBP/NewCSMBP/Util/Localization/CustomLocalizedString.m
+END
+NSBundle+NSBundle_ReloadNib.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/foreveross/!svn/ver/3101/trunk/58-xhweixin/CSMBP_IOS/CSMBP/NewCSMBP/Util/Localization/NSBundle+NSBundle_ReloadNib.h
+END
+NSBundle+NSBundle_ReloadNib.m
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/foreveross/!svn/ver/3101/trunk/58-xhweixin/CSMBP_IOS/CSMBP/NewCSMBP/Util/Localization/NSBundle+NSBundle_ReloadNib.m
+END
+CustomLocalizedString.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/foreveross/!svn/ver/3101/trunk/58-xhweixin/CSMBP_IOS/CSMBP/NewCSMBP/Util/Localization/CustomLocalizedString.h
+END

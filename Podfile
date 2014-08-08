@@ -1,0 +1,5 @@
+platform :ios,'5.0'
+pod 'FMDB'
+pod 'JSONKit'
+pod 'SSZipArchive'
+pod 'ASIHTTPRequest', '~> 1.8.2'
