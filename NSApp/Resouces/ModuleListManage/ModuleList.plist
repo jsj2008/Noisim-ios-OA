@@ -3,6 +3,8 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>pic</key>
+		<string>icon_</string>
 		<key>Code</key>
 		<string>BM</string>
 		<key>status</key>
@@ -11,6 +13,8 @@
 		<string>BusinessMate</string>
 	</dict>
 	<dict>
+		<key>pic</key>
+		<string>icon_</string>
 		<key>Code</key>
 		<string>JF</string>
 		<key>status</key>
@@ -19,6 +23,8 @@
 		<string>JobFlow</string>
 	</dict>
 	<dict>
+		<key>pic</key>
+		<string>icon_</string>
 		<key>Code</key>
 		<string>AT</string>
 		<key>status</key>
@@ -27,6 +33,8 @@
 		<string>Attendence</string>
 	</dict>
 	<dict>
+		<key>pic</key>
+		<string>icon_</string>
 		<key>Code</key>
 		<string>SM</string>
 		<key>status</key>
@@ -35,6 +43,8 @@
 		<string>SalaryManage</string>
 	</dict>
 	<dict>
+		<key>pic</key>
+		<string>icon_</string>
 		<key>Code</key>
 		<string>HR</string>
 		<key>status</key>
@@ -43,6 +53,8 @@
 		<string>HumanResource</string>
 	</dict>
 	<dict>
+		<key>pic</key>
+		<string>icon_</string>
 		<key>Code</key>
 		<string>PF</string>
 		<key>status</key>
@@ -51,6 +63,8 @@
 		<string>Performance</string>
 	</dict>
 	<dict>
+		<key>pic</key>
+		<string>icon_</string>
 		<key>Code</key>
 		<string>MS</string>
 		<key>status</key>
@@ -59,6 +73,8 @@
 		<string>MySchedule</string>
 	</dict>
 	<dict>
+		<key>pic</key>
+		<string>icon_</string>
 		<key>Code</key>
 		<string>NF</string>
 		<key>status</key>
@@ -67,6 +83,8 @@
 		<string>Notification</string>
 	</dict>
 	<dict>
+		<key>pic</key>
+		<string>icon_</string>
 		<key>Code</key>
 		<string>DP</string>
 		<key>status</key>
@@ -75,6 +93,8 @@
 		<string>DailyPresentation</string>
 	</dict>
 	<dict>
+		<key>pic</key>
+		<string>icon_</string>
 		<key>Code</key>
 		<string>OM</string>
 		<key>status</key>
