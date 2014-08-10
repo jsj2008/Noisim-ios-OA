@@ -1,5 +1,5 @@
 //
-//  BusinessViewController.h
+//  JobFlowViewController.h
 //  NSApp
 //
 //  Created by DongCai on 8/10/14.
@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BusinessViewController : BaseViewController
+@interface JobFlowViewController : BaseViewController
 
 @property (strong,nonatomic)UILabel *b_label;
+
 @end

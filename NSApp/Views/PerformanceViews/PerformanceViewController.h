@@ -1,5 +1,5 @@
 //
-//  BusinessViewController.h
+//  PerformanceViewController.h
 //  NSApp
 //
 //  Created by DongCai on 8/10/14.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BusinessViewController : BaseViewController
+@interface PerformanceViewController : UIViewController
 
-@property (strong,nonatomic)UILabel *b_label;
 @end

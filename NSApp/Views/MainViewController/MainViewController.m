@@ -45,6 +45,7 @@
     [_humanResoucebtn setTitle:nil forState:0];
     [_jobFlowBtn setBackgroundImage:[UIImage imageNamed:@"icon_"] forState:0];
     [_jobFlowBtn setTitle:nil forState:0];
+    [_jobFlowBtn addTarget:self action:@selector(didClickJobFlow:) forControlEvents:UIControlEventTouchUpInside];
     [_attendanceBtn setBackgroundImage:[UIImage imageNamed:@"icon_"] forState:0];
     [_attendanceBtn setTitle:nil forState:0];
     [_salaryManagerbtn setBackgroundImage:[UIImage imageNamed:@"icon_"] forState:0];
@@ -63,13 +64,15 @@
 {
     [self.navigationController pushViewController:_businessView animated:YES];
 }
+- (void)didClickJobFlow:(id)sender
+{
+    [self.navigationController pushViewController:_jobFlowView animated:YES];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     _businessView = [[BusinessViewController alloc] init];
-    // Do any additional setup after loading the view.
-//    [self.businessMateBtn setImage:[UIImage imageWithContentsOfFile:BTN_JIPIAOYUDING] forState:UIControlStateNormal];
-//    [_businessMateBtn setBackgroundImage:[UIImage imageNamed:@"icon_"] forState:0];
+    _jobFlowView = [[JobFlowViewController alloc]init];
     [self initBtn];
 }
 -(void)viewWillAppear:(BOOL)animated{

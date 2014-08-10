@@ -15,5 +15,6 @@
     #import "util.h"
     #import "Config.h"
     #import "UIDevice+MYDevice.h"
+    #import "BaseViewController.h"
     #import <Foundation/Foundation.h>
 #endif

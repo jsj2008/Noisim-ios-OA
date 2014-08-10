@@ -55,6 +55,14 @@
 		D7FFF3681997139C00BDAD88 /* HomeNavInitial.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FFF3671997139C00BDAD88 /* HomeNavInitial.m */; };
 		D7FFF373199774EC00BDAD88 /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FFF372199774EC00BDAD88 /* BaseNavigationViewController.m */; };
 		D7FFF37619977F0400BDAD88 /* BusinessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FFF37519977F0400BDAD88 /* BusinessViewController.m */; };
+		D7FFF3791997A7B100BDAD88 /* JobFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FFF3781997A7B100BDAD88 /* JobFlowViewController.m */; };
+		D7FFF37C1997ABA100BDAD88 /* HumanResourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FFF37B1997ABA100BDAD88 /* HumanResourceViewController.m */; };
+		D7FFF37F1997ABBC00BDAD88 /* AttendanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FFF37E1997ABBC00BDAD88 /* AttendanceViewController.m */; };
+		D7FFF3821997ABD100BDAD88 /* MyScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FFF3811997ABD100BDAD88 /* MyScheduleViewController.m */; };
+		D7FFF3851997ABE800BDAD88 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FFF3841997ABE800BDAD88 /* NotificationViewController.m */; };
+		D7FFF3881997ABFD00BDAD88 /* PerformanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FFF3871997ABFD00BDAD88 /* PerformanceViewController.m */; };
+		D7FFF38B1997AC1500BDAD88 /* SalaryManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FFF38A1997AC1500BDAD88 /* SalaryManageViewController.m */; };
+		D7FFF38E1997AC2E00BDAD88 /* OthersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FFF38D1997AC2E00BDAD88 /* OthersViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +160,22 @@
 		D7FFF372199774EC00BDAD88 /* BaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
 		D7FFF37419977F0400BDAD88 /* BusinessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessViewController.h; sourceTree = "<group>"; };
 		D7FFF37519977F0400BDAD88 /* BusinessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessViewController.m; sourceTree = "<group>"; };
+		D7FFF3771997A7B100BDAD88 /* JobFlowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobFlowViewController.h; sourceTree = "<group>"; };
+		D7FFF3781997A7B100BDAD88 /* JobFlowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobFlowViewController.m; sourceTree = "<group>"; };
+		D7FFF37A1997ABA100BDAD88 /* HumanResourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HumanResourceViewController.h; sourceTree = "<group>"; };
+		D7FFF37B1997ABA100BDAD88 /* HumanResourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HumanResourceViewController.m; sourceTree = "<group>"; };
+		D7FFF37D1997ABBC00BDAD88 /* AttendanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendanceViewController.h; sourceTree = "<group>"; };
+		D7FFF37E1997ABBC00BDAD88 /* AttendanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttendanceViewController.m; sourceTree = "<group>"; };
+		D7FFF3801997ABD100BDAD88 /* MyScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScheduleViewController.h; sourceTree = "<group>"; };
+		D7FFF3811997ABD100BDAD88 /* MyScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScheduleViewController.m; sourceTree = "<group>"; };
+		D7FFF3831997ABE800BDAD88 /* NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		D7FFF3841997ABE800BDAD88 /* NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		D7FFF3861997ABFD00BDAD88 /* PerformanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerformanceViewController.h; sourceTree = "<group>"; };
+		D7FFF3871997ABFD00BDAD88 /* PerformanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerformanceViewController.m; sourceTree = "<group>"; };
+		D7FFF3891997AC1500BDAD88 /* SalaryManageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalaryManageViewController.h; sourceTree = "<group>"; };
+		D7FFF38A1997AC1500BDAD88 /* SalaryManageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalaryManageViewController.m; sourceTree = "<group>"; };
+		D7FFF38C1997AC2E00BDAD88 /* OthersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OthersViewController.h; sourceTree = "<group>"; };
+		D7FFF38D1997AC2E00BDAD88 /* OthersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OthersViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -552,6 +576,8 @@
 		D7FFF3691997164800BDAD88 /* AttendanceViews */ = {
 			isa = PBXGroup;
 			children = (
+				D7FFF37D1997ABBC00BDAD88 /* AttendanceViewController.h */,
+				D7FFF37E1997ABBC00BDAD88 /* AttendanceViewController.m */,
 			);
 			path = AttendanceViews;
 			sourceTree = "<group>";
@@ -559,6 +585,8 @@
 		D7FFF36A1997164800BDAD88 /* HumanResourceViews */ = {
 			isa = PBXGroup;
 			children = (
+				D7FFF37A1997ABA100BDAD88 /* HumanResourceViewController.h */,
+				D7FFF37B1997ABA100BDAD88 /* HumanResourceViewController.m */,
 			);
 			path = HumanResourceViews;
 			sourceTree = "<group>";
@@ -566,6 +594,8 @@
 		D7FFF36B1997164800BDAD88 /* JobFlowViews */ = {
 			isa = PBXGroup;
 			children = (
+				D7FFF3771997A7B100BDAD88 /* JobFlowViewController.h */,
+				D7FFF3781997A7B100BDAD88 /* JobFlowViewController.m */,
 			);
 			path = JobFlowViews;
 			sourceTree = "<group>";
@@ -573,6 +603,8 @@
 		D7FFF36C1997164800BDAD88 /* MyScheduleViews */ = {
 			isa = PBXGroup;
 			children = (
+				D7FFF3801997ABD100BDAD88 /* MyScheduleViewController.h */,
+				D7FFF3811997ABD100BDAD88 /* MyScheduleViewController.m */,
 			);
 			path = MyScheduleViews;
 			sourceTree = "<group>";
@@ -580,6 +612,8 @@
 		D7FFF36D1997164800BDAD88 /* NotificationViews */ = {
 			isa = PBXGroup;
 			children = (
+				D7FFF3831997ABE800BDAD88 /* NotificationViewController.h */,
+				D7FFF3841997ABE800BDAD88 /* NotificationViewController.m */,
 			);
 			path = NotificationViews;
 			sourceTree = "<group>";
@@ -587,6 +621,8 @@
 		D7FFF36E1997164800BDAD88 /* OthersViews */ = {
 			isa = PBXGroup;
 			children = (
+				D7FFF38C1997AC2E00BDAD88 /* OthersViewController.h */,
+				D7FFF38D1997AC2E00BDAD88 /* OthersViewController.m */,
 			);
 			path = OthersViews;
 			sourceTree = "<group>";
@@ -594,6 +630,8 @@
 		D7FFF36F1997164800BDAD88 /* PerformanceViews */ = {
 			isa = PBXGroup;
 			children = (
+				D7FFF3861997ABFD00BDAD88 /* PerformanceViewController.h */,
+				D7FFF3871997ABFD00BDAD88 /* PerformanceViewController.m */,
 			);
 			path = PerformanceViews;
 			sourceTree = "<group>";
@@ -601,6 +639,8 @@
 		D7FFF3701997164800BDAD88 /* SalaryManageViews */ = {
 			isa = PBXGroup;
 			children = (
+				D7FFF3891997AC1500BDAD88 /* SalaryManageViewController.h */,
+				D7FFF38A1997AC1500BDAD88 /* SalaryManageViewController.m */,
 			);
 			path = SalaryManageViews;
 			sourceTree = "<group>";
@@ -741,10 +781,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7FFF38E1997AC2E00BDAD88 /* OthersViewController.m in Sources */,
 				D79C59131989461C00BF0DB7 /* BasicDbItem.m in Sources */,
 				D7FFF373199774EC00BDAD88 /* BaseNavigationViewController.m in Sources */,
 				D7E364EE19925BB5008DD2D6 /* UIDevice+MYDevice.m in Sources */,
 				D7D7ACD41984A040007A0EDF /* BaseApiClient.m in Sources */,
+				D7FFF3791997A7B100BDAD88 /* JobFlowViewController.m in Sources */,
+				D7FFF3851997ABE800BDAD88 /* NotificationViewController.m in Sources */,
 				D7A99CE31987DB0F002D64A1 /* KeychainItemWrapper.m in Sources */,
 				D7A86EC619939DB5009CE098 /* LoginViewController.m in Sources */,
 				D711E040198405D8007D9C20 /* AppDelegate.m in Sources */,
@@ -759,11 +802,16 @@
 				D7E364F119925DCA008DD2D6 /* MainViewController.m in Sources */,
 				D7A86EC91993AAC2009CE098 /* MyTextField.m in Sources */,
 				D79C59051989374900BF0DB7 /* MBProgressHUD.m in Sources */,
+				D7FFF37F1997ABBC00BDAD88 /* AttendanceViewController.m in Sources */,
 				D7A9FDB419867A39002DC6F9 /* DESObject.m in Sources */,
 				D711E03C198405D8007D9C20 /* main.m in Sources */,
+				D7FFF3821997ABD100BDAD88 /* MyScheduleViewController.m in Sources */,
 				D7A9FDB319867A39002DC6F9 /* Base64.m in Sources */,
+				D7FFF38B1997AC1500BDAD88 /* SalaryManageViewController.m in Sources */,
+				D7FFF37C1997ABA100BDAD88 /* HumanResourceViewController.m in Sources */,
 				D79C5902198936B900BF0DB7 /* MBProgressController.m in Sources */,
 				D7A9FDB519867A39002DC6F9 /* NSString+MLExtensions.m in Sources */,
+				D7FFF3881997ABFD00BDAD88 /* PerformanceViewController.m in Sources */,
 				D7FFF3681997139C00BDAD88 /* HomeNavInitial.m in Sources */,
 				D7A99CE01987D996002D64A1 /* NSString+MD5Addtion.m in Sources */,
 				D7A9FDBE19868F36002DC6F9 /* LoginService.m in Sources */,

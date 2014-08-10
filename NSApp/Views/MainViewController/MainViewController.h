@@ -8,6 +8,14 @@
 
 #import "BaseViewController.h"
 #import "BusinessViewController.h"
+#import "JobFlowViewController.h"
+#import "PerformanceViewController.h"
+#import "NotificationViewController.h"
+#import "SalaryManageViewController.h"
+#import "HumanResourceViewController.h"
+#import "MyScheduleViewController.h"
+#import "AttendanceViewController.h"
+#import "OthersViewController.h"
 
 @interface MainViewController : BaseViewController
 
@@ -41,7 +49,16 @@
 @property (retain, nonatomic) IBOutlet UIButton *helpBtn;
 
 //@property (strong, nonatomic) UINavigationController *navController;
+//各个模块入口
 @property (strong, nonatomic) BusinessViewController *businessView;
+@property (strong, nonatomic) JobFlowViewController *jobFlowView;
+@property (strong, nonatomic) PerformanceViewController *performanceView;
+@property (strong, nonatomic) SalaryManageViewController *salaryView;
+@property (strong, nonatomic) HumanResourceViewController *hrView;
+@property (strong, nonatomic) MyScheduleViewController *myScheduleView;
+@property (strong, nonatomic) AttendanceViewController *attendanceView;
+@property (strong, nonatomic) NotificationViewController *notificationView;
+@property (strong, nonatomic) OthersViewController *othersView;
 
 //btn function
 - (void)didClickBusinessMate:(id)sender;
