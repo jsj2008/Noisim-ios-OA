@@ -68,7 +68,7 @@
 - (void)didClickHumanResource:(id)sender;
 - (void)didClickJobFlow:(id)sender;
 - (void)didClickAttendance:(id)sender;
-- (void)didClickedNotification:(id)sender;
+- (void)didClickNotification:(id)sender;
 - (void)goOA:(id)sender;
 - (void)callPhone:(id)sender;
 - (void)checkLanguage:(id)sender;

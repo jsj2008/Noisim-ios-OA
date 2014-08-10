@@ -37,6 +37,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.view setBackgroundColor:[UIColor whiteColor]];
     // Do any additional setup after loading the view.
     if (IS_IOS7) {
         [self.navigationController.navigationBar setBarStyle:UIBarStyleBlackTranslucent];

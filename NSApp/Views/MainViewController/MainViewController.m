@@ -43,21 +43,41 @@
     [_businessMateBtn addTarget:self action:@selector(didClickBusinessMate:) forControlEvents:UIControlEventTouchUpInside];
     [_humanResoucebtn setBackgroundImage:[UIImage imageNamed:@"icon_"] forState:0];
     [_humanResoucebtn setTitle:nil forState:0];
+    [_humanResoucebtn addTarget:self action:@selector(didClickHumanResource::) forControlEvents:UIControlEventTouchUpInside];
     [_jobFlowBtn setBackgroundImage:[UIImage imageNamed:@"icon_"] forState:0];
     [_jobFlowBtn setTitle:nil forState:0];
     [_jobFlowBtn addTarget:self action:@selector(didClickJobFlow:) forControlEvents:UIControlEventTouchUpInside];
     [_attendanceBtn setBackgroundImage:[UIImage imageNamed:@"icon_"] forState:0];
     [_attendanceBtn setTitle:nil forState:0];
+    [_attendanceBtn addTarget:self action:@selector(didClickAttendance:) forControlEvents:UIControlEventTouchUpInside];
     [_salaryManagerbtn setBackgroundImage:[UIImage imageNamed:@"icon_"] forState:0];
     [_salaryManagerbtn setTitle:nil forState:0];
+    [_salaryManagerbtn addTarget:self action:@selector(didClickSalaryManager:) forControlEvents:UIControlEventTouchUpInside];
     [_otherBtn setBackgroundImage:[UIImage imageNamed:@"icon_"] forState:0];
     [_otherBtn setTitle:nil forState:0];
+    [_otherBtn addTarget:self action:@selector(didClickOther:) forControlEvents:UIControlEventTouchUpInside];
     [_notificationBtn setBackgroundImage:[UIImage imageNamed:@"icon_"] forState:0];
     [_notificationBtn setTitle:nil forState:0];
+    [_notificationBtn addTarget:self action:@selector(didClickNotification:) forControlEvents:UIControlEventTouchUpInside];
     [_scheduleBtn setBackgroundImage:[UIImage imageNamed:@"icon_"] forState:0];
     [_scheduleBtn setTitle:nil forState:0];
+    [_scheduleBtn addTarget:self action:@selector(didClickSchedule:) forControlEvents:UIControlEventTouchUpInside];
     [_performanceBtn setBackgroundImage:[UIImage imageNamed:@"icon_"] forState:0];
     [_performanceBtn setTitle:nil forState:0];
+    [_performanceBtn addTarget:self action:@selector(didClickPefermance:) forControlEvents:UIControlEventTouchUpInside];
+}
+- (void)initViews
+{
+    _businessView = [[BusinessViewController alloc] init];
+    _jobFlowView = [[JobFlowViewController alloc]init];
+    _hrView = [[HumanResourceViewController alloc] init];
+    _performanceView = [[PerformanceViewController alloc]init];
+    _salaryView = [[SalaryManageViewController alloc] init];
+    _notificationView = [[NotificationViewController alloc]init];
+    _othersView = [[OthersViewController alloc] init];
+    _attendanceView = [[AttendanceViewController alloc]init];
+    _myScheduleView = [[MyScheduleViewController alloc] init];
+
 }
 #pragma btn-action
 - (void)didClickBusinessMate:(id)sender
@@ -68,12 +88,39 @@
 {
     [self.navigationController pushViewController:_jobFlowView animated:YES];
 }
+- (void)didClickAttendance:(id)sender
+{
+    [self.navigationController pushViewController:_attendanceView animated:YES];
+}
+-(void)didClickHumanResource:(id)sender
+{
+    [self.navigationController pushViewController:_hrView animated:YES];
+}
+-(void)didClickNotification:(id)sender
+{
+    [self.navigationController pushViewController:_notificationView animated:YES];
+}
+-(void)didClickOther:(id)sender
+{
+    [self.navigationController pushViewController:_othersView animated:YES];
+}
+-(void)didClickSalaryManager:(id)sender
+{
+    [self.navigationController pushViewController:_salaryView animated:YES];
+}
+-(void)didClickSchedule:(id)sender
+{
+    [self.navigationController pushViewController:_myScheduleView animated:YES];
+}
+-(void)didClickPefermance:(id)sender
+{
+    [self.navigationController pushViewController:_performanceView animated:YES];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _businessView = [[BusinessViewController alloc] init];
-    _jobFlowView = [[JobFlowViewController alloc]init];
     [self initBtn];
+    [self initViews];
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
