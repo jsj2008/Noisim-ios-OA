@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MainViewController.h"
 
 @class LoginService;
 @interface LoginViewController : UIViewController<UITextFieldDelegate>
@@ -21,6 +22,9 @@
 @property (retain, nonatomic)UIButton *login;
 @property (strong, nonatomic)LoginService *loginSer;
 @property (strong, nonatomic)NSMutableDictionary *loginInfo;
+
+@property (strong, nonatomic)MainViewController *mainView;
+
 
 -(IBAction)login:(id)sender;
 - (IBAction)backgroundTap:(id)sender;

@@ -20,6 +20,7 @@
 #define BTN_JIPIAOYUDING (iPhone5? BTN_JIPIAOYUDING_SIZE_4:BTN_JIPIAOYUDING_SIZE_3_5)
 
 #import "MainViewController.h"
+#import "BusinessViewController.h"
 
 @interface MainViewController ()
 
@@ -39,6 +40,7 @@
 {
     [_businessMateBtn setBackgroundImage:[UIImage imageNamed:@"icon_"] forState:0];
     [_businessMateBtn setTitle:nil forState:0];
+    [_businessMateBtn addTarget:self action:@selector(didClickBusinessMate:) forControlEvents:UIControlEventTouchUpInside];
     [_humanResoucebtn setBackgroundImage:[UIImage imageNamed:@"icon_"] forState:0];
     [_humanResoucebtn setTitle:nil forState:0];
     [_jobFlowBtn setBackgroundImage:[UIImage imageNamed:@"icon_"] forState:0];
@@ -56,15 +58,24 @@
     [_performanceBtn setBackgroundImage:[UIImage imageNamed:@"icon_"] forState:0];
     [_performanceBtn setTitle:nil forState:0];
 }
+#pragma btn-action
+- (void)didClickBusinessMate:(id)sender
+{
+    [self.navigationController pushViewController:_businessView animated:YES];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    _businessView = [[BusinessViewController alloc] init];
     // Do any additional setup after loading the view.
 //    [self.businessMateBtn setImage:[UIImage imageWithContentsOfFile:BTN_JIPIAOYUDING] forState:UIControlStateNormal];
 //    [_businessMateBtn setBackgroundImage:[UIImage imageNamed:@"icon_"] forState:0];
     [self initBtn];
 }
-
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

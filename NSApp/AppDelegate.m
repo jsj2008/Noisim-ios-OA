@@ -22,8 +22,9 @@
     ////network demo
     NSLog(@"%@",[SystemInfo systemInfo]);
 //    MainViewController *root = [[MainViewController alloc]initWithNibName:@"MainViewController" bundle:nil];
-    LoginViewController *root = [[LoginViewController alloc]initWithNibName:@"LoginViewController" bundle:nil];
-    self.window.rootViewController = root;
+    LoginViewController *loginView = [[LoginViewController alloc]initWithNibName:@"LoginViewController" bundle:nil];
+    _nav = [[UINavigationController alloc]initWithRootViewController:loginView];
+    self.window.rootViewController = _nav;
     ////
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

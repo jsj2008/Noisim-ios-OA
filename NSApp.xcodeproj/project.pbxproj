@@ -52,6 +52,9 @@
 		D7E364F119925DCA008DD2D6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E364F019925DCA008DD2D6 /* MainViewController.m */; };
 		D7E364F419926732008DD2D6 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7E364F319926732008DD2D6 /* MainViewController.xib */; };
 		D7E364F619926767008DD2D6 /* MainViewController_Retina4.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7E364F519926767008DD2D6 /* MainViewController_Retina4.xib */; };
+		D7FFF3681997139C00BDAD88 /* HomeNavInitial.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FFF3671997139C00BDAD88 /* HomeNavInitial.m */; };
+		D7FFF373199774EC00BDAD88 /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FFF372199774EC00BDAD88 /* BaseNavigationViewController.m */; };
+		D7FFF37619977F0400BDAD88 /* BusinessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FFF37519977F0400BDAD88 /* BusinessViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +146,12 @@
 		D7E364F019925DCA008DD2D6 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		D7E364F319926732008DD2D6 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		D7E364F519926767008DD2D6 /* MainViewController_Retina4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController_Retina4.xib; sourceTree = "<group>"; };
+		D7FFF3661997139C00BDAD88 /* HomeNavInitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeNavInitial.h; sourceTree = "<group>"; };
+		D7FFF3671997139C00BDAD88 /* HomeNavInitial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeNavInitial.m; sourceTree = "<group>"; };
+		D7FFF371199774EC00BDAD88 /* BaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
+		D7FFF372199774EC00BDAD88 /* BaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
+		D7FFF37419977F0400BDAD88 /* BusinessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessViewController.h; sourceTree = "<group>"; };
+		D7FFF37519977F0400BDAD88 /* BusinessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,6 +379,8 @@
 		D7A99CE61987DEEB002D64A1 /* BusinessViews */ = {
 			isa = PBXGroup;
 			children = (
+				D7FFF37419977F0400BDAD88 /* BusinessViewController.h */,
+				D7FFF37519977F0400BDAD88 /* BusinessViewController.m */,
 			);
 			path = BusinessViews;
 			sourceTree = "<group>";
@@ -449,6 +460,15 @@
 		D7D7ACCD198495FE007A0EDF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D7FFF3691997164800BDAD88 /* AttendanceViews */,
+				D7FFF36A1997164800BDAD88 /* HumanResourceViews */,
+				D7FFF36B1997164800BDAD88 /* JobFlowViews */,
+				D7FFF36C1997164800BDAD88 /* MyScheduleViews */,
+				D7FFF36D1997164800BDAD88 /* NotificationViews */,
+				D7FFF36E1997164800BDAD88 /* OthersViews */,
+				D7FFF36F1997164800BDAD88 /* PerformanceViews */,
+				D7FFF3701997164800BDAD88 /* SalaryManageViews */,
+				D7FFF3651997134C00BDAD88 /* HomeInit */,
 				D7A86EC319939D80009CE098 /* LoginView */,
 				D7E364E519925980008DD2D6 /* MainViewController */,
 				D7A99CE61987DEEB002D64A1 /* BusinessViews */,
@@ -505,6 +525,8 @@
 			children = (
 				D7E364E919925A92008DD2D6 /* BaseViewController.h */,
 				D7E364EA19925A92008DD2D6 /* BaseViewController.m */,
+				D7FFF371199774EC00BDAD88 /* BaseNavigationViewController.h */,
+				D7FFF372199774EC00BDAD88 /* BaseNavigationViewController.m */,
 			);
 			path = BaseViewController;
 			sourceTree = "<group>";
@@ -516,6 +538,71 @@
 				D7E364F519926767008DD2D6 /* MainViewController_Retina4.xib */,
 			);
 			path = MainViewXiB;
+			sourceTree = "<group>";
+		};
+		D7FFF3651997134C00BDAD88 /* HomeInit */ = {
+			isa = PBXGroup;
+			children = (
+				D7FFF3661997139C00BDAD88 /* HomeNavInitial.h */,
+				D7FFF3671997139C00BDAD88 /* HomeNavInitial.m */,
+			);
+			path = HomeInit;
+			sourceTree = "<group>";
+		};
+		D7FFF3691997164800BDAD88 /* AttendanceViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AttendanceViews;
+			sourceTree = "<group>";
+		};
+		D7FFF36A1997164800BDAD88 /* HumanResourceViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HumanResourceViews;
+			sourceTree = "<group>";
+		};
+		D7FFF36B1997164800BDAD88 /* JobFlowViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JobFlowViews;
+			sourceTree = "<group>";
+		};
+		D7FFF36C1997164800BDAD88 /* MyScheduleViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyScheduleViews;
+			sourceTree = "<group>";
+		};
+		D7FFF36D1997164800BDAD88 /* NotificationViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NotificationViews;
+			sourceTree = "<group>";
+		};
+		D7FFF36E1997164800BDAD88 /* OthersViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OthersViews;
+			sourceTree = "<group>";
+		};
+		D7FFF36F1997164800BDAD88 /* PerformanceViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PerformanceViews;
+			sourceTree = "<group>";
+		};
+		D7FFF3701997164800BDAD88 /* SalaryManageViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SalaryManageViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -655,6 +742,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D79C59131989461C00BF0DB7 /* BasicDbItem.m in Sources */,
+				D7FFF373199774EC00BDAD88 /* BaseNavigationViewController.m in Sources */,
 				D7E364EE19925BB5008DD2D6 /* UIDevice+MYDevice.m in Sources */,
 				D7D7ACD41984A040007A0EDF /* BaseApiClient.m in Sources */,
 				D7A99CE31987DB0F002D64A1 /* KeychainItemWrapper.m in Sources */,
@@ -676,11 +764,13 @@
 				D7A9FDB319867A39002DC6F9 /* Base64.m in Sources */,
 				D79C5902198936B900BF0DB7 /* MBProgressController.m in Sources */,
 				D7A9FDB519867A39002DC6F9 /* NSString+MLExtensions.m in Sources */,
+				D7FFF3681997139C00BDAD88 /* HomeNavInitial.m in Sources */,
 				D7A99CE01987D996002D64A1 /* NSString+MD5Addtion.m in Sources */,
 				D7A9FDBE19868F36002DC6F9 /* LoginService.m in Sources */,
 				D79C59171989468200BF0DB7 /* BaseDBService.m in Sources */,
 				D7A9FDB619867A39002DC6F9 /* ZipArchive.mm in Sources */,
 				D7A9FDB219867A39002DC6F9 /* API.m in Sources */,
+				D7FFF37619977F0400BDAD88 /* BusinessViewController.m in Sources */,
 				D7A9A508198906D900329BED /* util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

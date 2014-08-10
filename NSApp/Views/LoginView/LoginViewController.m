@@ -57,6 +57,10 @@
     }
     return self;
 }
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];
+}
 #pragma keybord exit
 -(void)dismissKeyboard {
     [_userName_tf resignFirstResponder];
@@ -78,7 +82,9 @@
 }
 -(void)finish:(id)data{
     NSLog(@"%@",data);
-    [self presentModalViewController:[[MainViewController alloc] init]animated:NO];
+    _mainView= [[MainViewController alloc] init];
+    [self.navigationController pushViewController:_mainView animated:YES];
+//    [self presentModalViewController:_mainView animated:NO];
 }
 -(void)fail:(id)data{
     NSLog(@"%@",data);

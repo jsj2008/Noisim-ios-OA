@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#import "BusinessViewController.h"
 
 @interface MainViewController : BaseViewController
 
@@ -38,6 +39,9 @@
 @property (retain, nonatomic) IBOutlet UIButton *webBtn;
 @property (retain, nonatomic) IBOutlet UIButton *languageBtn;//简体，繁体
 @property (retain, nonatomic) IBOutlet UIButton *helpBtn;
+
+//@property (strong, nonatomic) UINavigationController *navController;
+@property (strong, nonatomic) BusinessViewController *businessView;
 
 //btn function
 - (void)didClickBusinessMate:(id)sender;

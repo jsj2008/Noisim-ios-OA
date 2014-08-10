@@ -14,4 +14,5 @@
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) LoginService *login;
+@property (strong, nonatomic) UINavigationController *nav;
 @end
