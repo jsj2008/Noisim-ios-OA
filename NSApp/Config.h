@@ -17,3 +17,5 @@ extern NSString *BASE_SERVER_URL;
 
 //----------------判断是否是RETINA屏--------------------------
 #define isRetina ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define DEFAULT_TEXT_COLOR [UIColor colorWithRed:93.0/255.0 green:93.0/255.0 blue:93.0/255.0 alpha:1.0]

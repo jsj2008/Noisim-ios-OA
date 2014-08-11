@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ListViewController.h"
 
-@interface BusinessViewController : BaseViewController
+@interface BusinessViewController : ListViewController<UITableViewDelegate,UITableViewDataSource>
 
-@property (strong,nonatomic)UILabel *b_label;
+@property (strong,nonatomic)UITableView *tableView;
 @end

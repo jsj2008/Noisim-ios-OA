@@ -28,6 +28,10 @@
 		D79C59121989461C00BF0DB7 /* BasicDbItem+DBOperationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D79C590F1989461C00BF0DB7 /* BasicDbItem+DBOperationHelper.m */; };
 		D79C59131989461C00BF0DB7 /* BasicDbItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D79C59111989461C00BF0DB7 /* BasicDbItem.m */; };
 		D79C59171989468200BF0DB7 /* BaseDBService.m in Sources */ = {isa = PBXBuildFile; fileRef = D79C59161989468200BF0DB7 /* BaseDBService.m */; };
+		D7A8485E1998EF92009717E7 /* EGORefreshTableFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A8485B1998EF92009717E7 /* EGORefreshTableFooterView.m */; };
+		D7A8485F1998EF92009717E7 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A8485D1998EF92009717E7 /* EGORefreshTableHeaderView.m */; };
+		D7A848631998F343009717E7 /* colorWithHex.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A848621998F343009717E7 /* colorWithHex.m */; };
+		D7A8486619990D29009717E7 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A8486519990D29009717E7 /* ListViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D7A86EBD1993166A009CE098 /* icon_.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A86EBA1993166A009CE098 /* icon_.png */; };
 		D7A86EBE1993166A009CE098 /* icon_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A86EBB1993166A009CE098 /* icon_@2x.png */; };
 		D7A86EBF1993166A009CE098 /* icon_retina4.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A86EBC1993166A009CE098 /* icon_retina4.png */; };
@@ -110,6 +114,14 @@
 		D79C59111989461C00BF0DB7 /* BasicDbItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicDbItem.m; sourceTree = "<group>"; };
 		D79C59151989468200BF0DB7 /* BaseDBService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDBService.h; sourceTree = "<group>"; };
 		D79C59161989468200BF0DB7 /* BaseDBService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDBService.m; sourceTree = "<group>"; };
+		D7A8485A1998EF92009717E7 /* EGORefreshTableFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableFooterView.h; sourceTree = "<group>"; };
+		D7A8485B1998EF92009717E7 /* EGORefreshTableFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableFooterView.m; sourceTree = "<group>"; };
+		D7A8485C1998EF92009717E7 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		D7A8485D1998EF92009717E7 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		D7A848611998F343009717E7 /* colorWithHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = colorWithHex.h; sourceTree = "<group>"; };
+		D7A848621998F343009717E7 /* colorWithHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = colorWithHex.m; sourceTree = "<group>"; };
+		D7A8486419990D29009717E7 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		D7A8486519990D29009717E7 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		D7A86EBA1993166A009CE098 /* icon_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_.png; sourceTree = "<group>"; };
 		D7A86EBB1993166A009CE098 /* icon_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_@2x.png"; sourceTree = "<group>"; };
 		D7A86EBC1993166A009CE098 /* icon_retina4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_retina4.png; sourceTree = "<group>"; };
@@ -324,6 +336,28 @@
 			path = AppDbOperation;
 			sourceTree = "<group>";
 		};
+		D7A848591998EF92009717E7 /* EGORefreshTable */ = {
+			isa = PBXGroup;
+			children = (
+				D7A8486419990D29009717E7 /* ListViewController.h */,
+				D7A8486519990D29009717E7 /* ListViewController.m */,
+				D7A8485A1998EF92009717E7 /* EGORefreshTableFooterView.h */,
+				D7A8485B1998EF92009717E7 /* EGORefreshTableFooterView.m */,
+				D7A8485C1998EF92009717E7 /* EGORefreshTableHeaderView.h */,
+				D7A8485D1998EF92009717E7 /* EGORefreshTableHeaderView.m */,
+			);
+			path = EGORefreshTable;
+			sourceTree = "<group>";
+		};
+		D7A848601998F343009717E7 /* ColorWithHex */ = {
+			isa = PBXGroup;
+			children = (
+				D7A848611998F343009717E7 /* colorWithHex.h */,
+				D7A848621998F343009717E7 /* colorWithHex.m */,
+			);
+			path = ColorWithHex;
+			sourceTree = "<group>";
+		};
 		D7A86EB8199314DC009CE098 /* Resouces */ = {
 			isa = PBXGroup;
 			children = (
@@ -467,6 +501,8 @@
 		D7D7ACCC198495FE007A0EDF /* Uitils */ = {
 			isa = PBXGroup;
 			children = (
+				D7A848601998F343009717E7 /* ColorWithHex */,
+				D7A848591998EF92009717E7 /* EGORefreshTable */,
 				D7E364E719925A81008DD2D6 /* BaseViews */,
 				D79C59141989468200BF0DB7 /* AppDbOperation */,
 				D79C5906198938B900BF0DB7 /* Localization */,
@@ -792,6 +828,7 @@
 				D7A86EC619939DB5009CE098 /* LoginViewController.m in Sources */,
 				D711E040198405D8007D9C20 /* AppDelegate.m in Sources */,
 				D79C59121989461C00BF0DB7 /* BasicDbItem+DBOperationHelper.m in Sources */,
+				D7A8485F1998EF92009717E7 /* EGORefreshTableHeaderView.m in Sources */,
 				D7A99CDC1987D4BD002D64A1 /* SystemInfo.m in Sources */,
 				D7A9A5021989034600329BED /* LoginItem.m in Sources */,
 				D79C58FE19890CA900BF0DB7 /* Config.m in Sources */,
@@ -799,13 +836,16 @@
 				D79C590C198938B900BF0DB7 /* NSBundle+NSBundle_ReloadNib.m in Sources */,
 				D79C590B198938B900BF0DB7 /* CustomLocalizedString.m in Sources */,
 				D7E364EB19925A92008DD2D6 /* BaseViewController.m in Sources */,
+				D7A8485E1998EF92009717E7 /* EGORefreshTableFooterView.m in Sources */,
 				D7E364F119925DCA008DD2D6 /* MainViewController.m in Sources */,
 				D7A86EC91993AAC2009CE098 /* MyTextField.m in Sources */,
 				D79C59051989374900BF0DB7 /* MBProgressHUD.m in Sources */,
 				D7FFF37F1997ABBC00BDAD88 /* AttendanceViewController.m in Sources */,
 				D7A9FDB419867A39002DC6F9 /* DESObject.m in Sources */,
+				D7A8486619990D29009717E7 /* ListViewController.m in Sources */,
 				D711E03C198405D8007D9C20 /* main.m in Sources */,
 				D7FFF3821997ABD100BDAD88 /* MyScheduleViewController.m in Sources */,
+				D7A848631998F343009717E7 /* colorWithHex.m in Sources */,
 				D7A9FDB319867A39002DC6F9 /* Base64.m in Sources */,
 				D7FFF38B1997AC1500BDAD88 /* SalaryManageViewController.m in Sources */,
 				D7FFF37C1997ABA100BDAD88 /* HumanResourceViewController.m in Sources */,

@@ -43,7 +43,7 @@
     [_businessMateBtn addTarget:self action:@selector(didClickBusinessMate:) forControlEvents:UIControlEventTouchUpInside];
     [_humanResoucebtn setBackgroundImage:[UIImage imageNamed:@"icon_"] forState:0];
     [_humanResoucebtn setTitle:nil forState:0];
-    [_humanResoucebtn addTarget:self action:@selector(didClickHumanResource::) forControlEvents:UIControlEventTouchUpInside];
+    [_humanResoucebtn addTarget:self action:@selector(didClickHumanResource:) forControlEvents:UIControlEventTouchUpInside];
     [_jobFlowBtn setBackgroundImage:[UIImage imageNamed:@"icon_"] forState:0];
     [_jobFlowBtn setTitle:nil forState:0];
     [_jobFlowBtn addTarget:self action:@selector(didClickJobFlow:) forControlEvents:UIControlEventTouchUpInside];
