@@ -54,14 +54,18 @@
 #pragma mark Data Source Loading / Reloading Methods
 
 - (void)reloadTableViewDataSource {
-	_reloading = YES;
+	h_reloading = YES;
+    f_reloading = YES;
     // TO be implemented
 }
 
 - (void)doneLoadingTableViewData {
 	//  model should call this when its done loading
-	_reloading = NO;
+	h_reloading = NO;
+    f_reloading = NO;
 	[_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.table];
+    [_refreshFooterView egoRefreshScrollViewDataSourceDidFinishedLoading:self.table];
+
 }
 
 
@@ -70,10 +74,12 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
 	[_refreshHeaderView egoRefreshScrollViewDidScroll:scrollView];
+    [_refreshFooterView egoRefreshScrollViewDidScroll:scrollView];
 }
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
 	[_refreshHeaderView egoRefreshScrollViewDidEndDragging:scrollView];
+    [_refreshFooterView egoRefreshScrollViewDidEndDragging:scrollView];
 }
 
 
@@ -85,14 +91,24 @@
 }
 
 - (BOOL)egoRefreshTableHeaderDataSourceIsLoading:(EGORefreshTableHeaderView*)view {
-	return _reloading; // should return if data source model is reloading
+	return h_reloading; // should return if data source model is reloading
 }
 
 - (NSDate*)egoRefreshTableHeaderDataSourceLastUpdated:(EGORefreshTableHeaderView*)view {
 	return [NSDate date]; // should return date data source was last changed
 }
+#pragma mark EGORefreshTableFooterDelegate Methods
+- (void)egoRefreshTableFooterDidTriggerRefresh:(EGORefreshTableFooterView*)view{
+	[self reloadTableViewDataSource];
+}
 
+- (BOOL)egoRefreshTableFooterDataSourceIsLoading:(EGORefreshTableFooterView*)view {
+	return f_reloading; // should return if data source model is reloading
+}
 
+- (NSDate*)egoRefreshTableFooterDataSourceLastUpdated:(EGORefreshTableFooterView*)view {
+	return [NSDate date]; // should return date data source was last changed
+}
 #pragma mark - View lifecycle
 
 /*
@@ -109,16 +125,29 @@
     [super viewDidLoad];
 }
 */
-
+-(void)viewDidAppear:(BOOL)animated
+{
+    //frame应在表格加载完数据源之后再设置
+    [self setRefreshViewFrame];
+    [super viewDidAppear:animated];
+}
+-(void)setRefreshViewFrame
+{
+    //如果contentsize的高度比表的高度小，那么就需要把刷新视图放在表的bounds的下面
+    int height = MAX(self.table.bounds.size.height, self.table.contentSize.height);
+    _refreshFooterView.frame =CGRectMake(0.0f, height, self.view.frame.size.width, self.table.bounds.size.height);
+}
 - (void)viewDidUnload
 {
     [super viewDidUnload];
 	_refreshHeaderView = nil;
+    _refreshFooterView = nil;
 }
 
 - (void)dealloc {
     [table release];
 	_refreshHeaderView = nil;
+    _refreshFooterView = nil;
     [super dealloc];
 }
 

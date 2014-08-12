@@ -45,8 +45,8 @@
     if((self = [super initWithFrame:frame])) {
 		
 		self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-//		self.backgroundColor = [UIColor colorWithRed:226.0/255.0 green:231.0/255.0 blue:237.0/255.0 alpha:1.0];
-        self.backgroundColor = [UIColor grayColor];
+		self.backgroundColor = [UIColor colorWithRed:226.0/255.0 green:231.0/255.0 blue:237.0/255.0 alpha:1.0];
+//        self.backgroundColor = [UIColor grayColor];
         //插入一个白色半透明背景
         UIImageView *backView = [[UIImageView alloc] initWithFrame:self.frame];
         backView.backgroundColor = [UIColor whiteColor];
@@ -60,10 +60,10 @@
         //modify by shenjx end
 		label.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 		label.font = [UIFont systemFontOfSize:12.0f];
-		label.textColor = textColor;
+		label.textColor = [UIColor blackColor];
 //		label.shadowColor = [UIColor colorWithWhite:0.9f alpha:1.0f];
 //		label.shadowOffset = CGSizeMake(0.0f, 1.0f);
-		label.backgroundColor = [UIColor clearColor];
+		label.backgroundColor = [UIColor blackColor];
 		label.textAlignment = UITextAlignmentCenter;
 		[self addSubview:label];
 		_lastUpdatedLabel=label;
@@ -120,7 +120,7 @@
 
 - (id)initWithFrame:(CGRect)frame  {
 //  return [self initWithFrame:frame arrowImageName:@"blueArrow.png" textColor:TEXT_COLOR];
-    return [self initWithFrame:frame arrowImageName:@"blueArrow.png" textColor:DEFAULT_TEXT_COLOR];
+    return [self initWithFrame:frame arrowImageName:@"" textColor:DEFAULT_TEXT_COLOR];
 }
 
 #pragma mark -

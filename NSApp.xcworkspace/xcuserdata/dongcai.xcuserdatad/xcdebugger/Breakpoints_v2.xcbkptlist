@@ -73,13 +73,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NSApp/Uitils/EGORefreshTable/EGORefreshTableHeaderView.m"
-            timestampString = "429458370.874048"
+            filePath = "NSApp/Uitils/EGORefreshTable/EGORefreshTableFooterView.m"
+            timestampString = "429463665.010407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "240"
-            endingLineNumber = "240"
-            landmarkName = "-egoRefreshScrollViewDataSourceDidFinishedLoading:"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "-initWithFrame:arrowImageName:textColor:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NSApp/Views/BusinessViews/BusinessViewController.m"
+            timestampString = "429464047.702931"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

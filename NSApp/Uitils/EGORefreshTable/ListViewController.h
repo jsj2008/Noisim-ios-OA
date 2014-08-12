@@ -27,11 +27,14 @@
 //  
 
 #import "EGORefreshTableHeaderView.h"
+#import "EGORefreshTableFooterView.h"
 
-@interface ListViewController : BaseViewController <EGORefreshTableHeaderDelegate> {
+@interface ListViewController : BaseViewController <EGORefreshTableHeaderDelegate,EGORefreshTableFooterDelegate> {
 
     EGORefreshTableHeaderView *_refreshHeaderView;
-    BOOL _reloading;
+    BOOL h_reloading;
+    EGORefreshTableFooterView *_refreshFooterView;
+    BOOL f_reloading;
 
 }
 

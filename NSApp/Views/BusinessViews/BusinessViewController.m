@@ -19,7 +19,8 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.table = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, 320, 460) style:UITableViewStylePlain];
+        //导航栏40高度
+        self.table = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, 320, 420) style:UITableViewStylePlain];
         self.table.delegate = self;
         self.table.dataSource = self;
         [self.view addSubview:self.table];
@@ -38,10 +39,23 @@
 		_refreshHeaderView = view;
 		
 	}
+    if (_refreshFooterView == nil) {
+		
+		EGORefreshTableFooterView *view = [[EGORefreshTableFooterView alloc] initWithFrame:CGRectZero];
+		view.delegate = self;
+		[self.table addSubview:view];
+		_refreshFooterView = view;
+		
+	}
 	
 	//  update the last update date
+    [_refreshFooterView refreshLastUpdatedDate];
 	[_refreshHeaderView refreshLastUpdatedDate];
     self.title = @"Pull down example";
+}
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
 }
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -57,8 +71,8 @@
 
 // This is the core method you should implement
 - (void)reloadTableViewDataSource {
-	_reloading = YES;
-    
+	h_reloading = YES;
+    f_reloading = YES;
     // Here you would make an HTTP request or something like that
     // Call [self doneLoadingTableViewData] when you are done
     [self performSelector:@selector(doneLoadingTableViewData) withObject:nil afterDelay:3.0];
