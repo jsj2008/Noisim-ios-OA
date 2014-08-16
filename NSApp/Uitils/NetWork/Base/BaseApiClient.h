@@ -35,7 +35,13 @@ typedef enum {
 @interface BaseApiClient : NSObject<QueryDelegate, MBProgressControllerDelegate>
 {
     ASIHTTPRequest *_request;
+    SEL _didFinishRequest;
+    SEL _didFailRequest;
+    id _delegate;
     NSString *_path;
+    CachePolicy policy;
+    NSString *c_path;
+    NSMutableDictionary *c_params;
     BOOL withOutVersionCheck;
 }
 @property (strong,nonatomic)ASIHTTPRequest *request;
@@ -44,7 +50,15 @@ typedef enum {
                        delegate:(id)aDelegate
                  withMethodType:(NSString *)NetworkMethod
               didFinishSelector:(SEL)aDidFinishSelector
-                didFailSelector:(SEL)aDidFailSelector;
+                didFailSelector:(SEL)aDidFailSelector __attribute__((deprecated));
+
+- (void)requestJsonDataWithPath:(NSString *)aPath
+                     withParams:(NSMutableDictionary*)params
+                       delegate:(id)aDelegate
+                 withMethodType:(NSString *)NetworkMethod
+              didFinishSelector:(SEL)aDidFinishSelector
+                didFailSelector:(SEL)aDidFailSelector
+                withCachePolicy:(CachePolicy)cachePolicy;
 
 - (void)requestXmlDataWithPath:(NSString *)aPath
                     withParams:(NSMutableDictionary*)params
@@ -52,5 +66,8 @@ typedef enum {
                 withMethodType:(NSString *)NetworkMethod
              didFinishSelector:(SEL)aDidFinishSelector
                didFailSelector:(SEL)aDidFailSelector;
+
+-(void)finishedRequest:(ASIHTTPRequest *)request;
+-(void)failedRequest:(ASIHTTPRequest *)request;
 
 @end

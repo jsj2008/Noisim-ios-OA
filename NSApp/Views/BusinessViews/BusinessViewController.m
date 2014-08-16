@@ -51,7 +51,7 @@
 	//  update the last update date
     [_refreshFooterView refreshLastUpdatedDate];
 	[_refreshHeaderView refreshLastUpdatedDate];
-    self.title = @"Pull down example";
+    self.title = @"合同管理";
 }
 -(void)viewDidAppear:(BOOL)animated
 {

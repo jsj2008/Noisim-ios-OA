@@ -12,6 +12,7 @@
 #import "LoginService.h"
 #import "SystemInfo.h"
 #import "MainViewController.h"
+#import "RequestCacheService.h"
 
 @implementation AppDelegate
 
@@ -21,6 +22,8 @@
     // Override point for customization after application launch.
     ////network demo
     NSLog(@"%@",[SystemInfo systemInfo]);
+    RequestCacheService *cacheSeeting = [RequestCacheService getService];
+    [cacheSeeting loadCacheConfigFromServer];
 //    MainViewController *root = [[MainViewController alloc]initWithNibName:@"MainViewController" bundle:nil];
     LoginViewController *loginView = [[LoginViewController alloc]initWithNibName:@"LoginViewController" bundle:nil];
     _nav = [[UINavigationController alloc]initWithRootViewController:loginView];

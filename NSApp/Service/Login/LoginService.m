@@ -29,13 +29,10 @@ static LoginService *singleton = nil;
     _delegate = aDelegate;
     _httpRequest = [[BaseApiClient alloc]init];
     NSMutableDictionary *params = [[NSMutableDictionary alloc]initWithObjectsAndKeys:_userName,@"userName",_passWord,@"passWord", nil];
-    [_httpRequest requestJsonDataWithPath:LOGIN_URL withParams:params delegate:self withMethodType:@"POST" didFinishSelector:@selector(requestFinished:) didFailSelector:@selector(requestFailed:)];
+    [_httpRequest requestJsonDataWithPath:LOGIN_URL withParams:params delegate:self withMethodType:@"POST" didFinishSelector:@selector(requestFinished:) didFailSelector:@selector(requestFailed:)withCachePolicy:Notice];
 }
--(void)requestFinished:(ASIHTTPRequest *)request
+-(void)requestFinished:(NSDictionary *)kitData
 {
-    NSData *content = [request responseData];
-    NSDictionary *kitData = [content objectFromJSONData];
-    NSLog(@"%@",kitData);
     if([[kitData objectForKey:@"Code"] isEqualToString:@"true"]){
         _login = getObjectFromDic([LoginItem class],[kitData objectForKey:@"result"]);
         
