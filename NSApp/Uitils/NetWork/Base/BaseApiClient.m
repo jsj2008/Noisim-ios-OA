@@ -71,7 +71,6 @@
                 return;
             }
         }
-        return;
     }
     policy = cachePolicy;
     c_path = aPath;
