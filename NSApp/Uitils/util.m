@@ -21,6 +21,7 @@ UIBarButtonItem *getCustomNavBackButton(id iTarget, SEL iSelector)
     UIButton *backButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 14, 22)];
     
     [backButton setImage:[UIImage imageNamed:@"fanhui.png"] forState:UIControlStateNormal];
+    [backButton setBackgroundColor:[UIColor grayColor]];
     [backButton addTarget:iTarget action:iSelector forControlEvents:UIControlEventTouchUpInside];
     //将返回按钮向右偏移5像素，这样不会太贴边
     backButton.contentEdgeInsets = UIEdgeInsetsMake(0, 5, 0, -5);

@@ -44,9 +44,9 @@
 @property (retain, nonatomic) IBOutlet UILabel *otherLab;
 
 //下面的按钮
-@property (retain, nonatomic) IBOutlet UIButton *webBtn;
-@property (retain, nonatomic) IBOutlet UIButton *languageBtn;//简体，繁体
-@property (retain, nonatomic) IBOutlet UIButton *helpBtn;
+//@property (retain, nonatomic) IBOutlet UIButton *webBtn;
+//@property (retain, nonatomic) IBOutlet UIButton *languageBtn;//简体，繁体
+//@property (retain, nonatomic) IBOutlet UIButton *helpBtn;
 
 //@property (strong, nonatomic) UINavigationController *navController;
 //各个模块入口

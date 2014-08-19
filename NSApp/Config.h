@@ -23,3 +23,5 @@ extern NSString *BASE_SERVER_URL;
 #define SHOW_NETWORK_DEBUG
 
 #define CACHE_LOGIN_KEY @"CacheLoginKey"
+
+#define appDelegate	((AppDelegate *)[[UIApplication sharedApplication] delegate])

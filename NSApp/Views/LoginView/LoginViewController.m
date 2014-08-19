@@ -82,8 +82,8 @@
 }
 -(void)finish:(id)data{
     NSLog(@"%@",data);
-    _mainView= [[MainViewController alloc] init];
-    [self.navigationController pushViewController:_mainView animated:YES];
+    _appView= [[BootViewController alloc] init];
+    [self presentModalViewController:_appView animated:NO];
 //    [self presentModalViewController:_mainView animated:NO];
 }
 -(void)fail:(id)data{

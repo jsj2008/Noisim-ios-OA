@@ -24,10 +24,9 @@
     NSLog(@"%@",[SystemInfo systemInfo]);
     RequestCacheService *cacheSeeting = [RequestCacheService getService];
     [cacheSeeting loadCacheConfigFromServer];
-//    MainViewController *root = [[MainViewController alloc]initWithNibName:@"MainViewController" bundle:nil];
     LoginViewController *loginView = [[LoginViewController alloc]initWithNibName:@"LoginViewController" bundle:nil];
-    _nav = [[UINavigationController alloc]initWithRootViewController:loginView];
-    self.window.rootViewController = _nav;
+//    _nav = [[UINavigationController alloc]initWithRootViewController:loginView];
+    self.window.rootViewController = loginView;
     ////
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

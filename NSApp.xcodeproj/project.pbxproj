@@ -20,6 +20,7 @@
 		D711E04B198405D8007D9C20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D711E033198405D7007D9C20 /* UIKit.framework */; };
 		D711E053198405D8007D9C20 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D711E051198405D8007D9C20 /* InfoPlist.strings */; };
 		D711E055198405D8007D9C20 /* NSAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D711E054198405D8007D9C20 /* NSAppTests.m */; };
+		D78FD8CC19A2413500864AF1 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D78FD8CB19A2413500864AF1 /* libsqlite3.0.dylib */; };
 		D79C58FE19890CA900BF0DB7 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = D79C58FD19890CA900BF0DB7 /* Config.m */; };
 		D79C5902198936B900BF0DB7 /* MBProgressController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79C5901198936B900BF0DB7 /* MBProgressController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D79C59051989374900BF0DB7 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D79C59041989374900BF0DB7 /* MBProgressHUD.m */; };
@@ -28,6 +29,10 @@
 		D79C59121989461C00BF0DB7 /* BasicDbItem+DBOperationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D79C590F1989461C00BF0DB7 /* BasicDbItem+DBOperationHelper.m */; };
 		D79C59131989461C00BF0DB7 /* BasicDbItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D79C59111989461C00BF0DB7 /* BasicDbItem.m */; };
 		D79C59171989468200BF0DB7 /* BaseDBService.m in Sources */ = {isa = PBXBuildFile; fileRef = D79C59161989468200BF0DB7 /* BaseDBService.m */; };
+		D7A1EEFC19A382E600827CDB /* BootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A1EEFB19A382E600827CDB /* BootViewController.m */; };
+		D7A1EF0219A38B5300827CDB /* DealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A1EF0119A38B5300827CDB /* DealViewController.m */; };
+		D7A1EF0519A38B6D00827CDB /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A1EF0419A38B6D00827CDB /* MessagesViewController.m */; };
+		D7A1EF0819A38B8500827CDB /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A1EF0719A38B8500827CDB /* SettingViewController.m */; };
 		D7A8485E1998EF92009717E7 /* EGORefreshTableFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A8485B1998EF92009717E7 /* EGORefreshTableFooterView.m */; };
 		D7A8485F1998EF92009717E7 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A8485D1998EF92009717E7 /* EGORefreshTableHeaderView.m */; };
 		D7A848631998F343009717E7 /* colorWithHex.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A848621998F343009717E7 /* colorWithHex.m */; };
@@ -113,6 +118,7 @@
 		D711E050198405D8007D9C20 /* NSAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSAppTests-Info.plist"; sourceTree = "<group>"; };
 		D711E052198405D8007D9C20 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D711E054198405D8007D9C20 /* NSAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSAppTests.m; sourceTree = "<group>"; };
+		D78FD8CB19A2413500864AF1 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		D79C58FC19890CA900BF0DB7 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		D79C58FD19890CA900BF0DB7 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
 		D79C5900198936B900BF0DB7 /* MBProgressController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressController.h; sourceTree = "<group>"; };
@@ -129,6 +135,14 @@
 		D79C59111989461C00BF0DB7 /* BasicDbItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicDbItem.m; sourceTree = "<group>"; };
 		D79C59151989468200BF0DB7 /* BaseDBService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDBService.h; sourceTree = "<group>"; };
 		D79C59161989468200BF0DB7 /* BaseDBService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDBService.m; sourceTree = "<group>"; };
+		D7A1EEFA19A382E600827CDB /* BootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BootViewController.h; sourceTree = "<group>"; };
+		D7A1EEFB19A382E600827CDB /* BootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BootViewController.m; sourceTree = "<group>"; };
+		D7A1EF0019A38B5300827CDB /* DealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DealViewController.h; sourceTree = "<group>"; };
+		D7A1EF0119A38B5300827CDB /* DealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DealViewController.m; sourceTree = "<group>"; };
+		D7A1EF0319A38B6D00827CDB /* MessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesViewController.h; sourceTree = "<group>"; };
+		D7A1EF0419A38B6D00827CDB /* MessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesViewController.m; sourceTree = "<group>"; };
+		D7A1EF0619A38B8500827CDB /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		D7A1EF0719A38B8500827CDB /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		D7A8485A1998EF92009717E7 /* EGORefreshTableFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableFooterView.h; sourceTree = "<group>"; };
 		D7A8485B1998EF92009717E7 /* EGORefreshTableFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableFooterView.m; sourceTree = "<group>"; };
 		D7A8485C1998EF92009717E7 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
@@ -241,6 +255,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D78FD8CC19A2413500864AF1 /* libsqlite3.0.dylib in Frameworks */,
 				D711E032198405D7007D9C20 /* CoreGraphics.framework in Frameworks */,
 				D711E034198405D7007D9C20 /* UIKit.framework in Frameworks */,
 				D711E030198405D7007D9C20 /* Foundation.framework in Frameworks */,
@@ -284,6 +299,7 @@
 		D711E02E198405D7007D9C20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D78FD8CB19A2413500864AF1 /* libsqlite3.0.dylib */,
 				D711E02F198405D7007D9C20 /* Foundation.framework */,
 				D711E031198405D7007D9C20 /* CoreGraphics.framework */,
 				D711E033198405D7007D9C20 /* UIKit.framework */,
@@ -380,6 +396,33 @@
 				D79C59161989468200BF0DB7 /* BaseDBService.m */,
 			);
 			path = AppDbOperation;
+			sourceTree = "<group>";
+		};
+		D7A1EEFD19A38B1800827CDB /* buttom_DealViews */ = {
+			isa = PBXGroup;
+			children = (
+				D7A1EF0019A38B5300827CDB /* DealViewController.h */,
+				D7A1EF0119A38B5300827CDB /* DealViewController.m */,
+			);
+			path = buttom_DealViews;
+			sourceTree = "<group>";
+		};
+		D7A1EEFE19A38B1800827CDB /* buttom_NewsViews */ = {
+			isa = PBXGroup;
+			children = (
+				D7A1EF0319A38B6D00827CDB /* MessagesViewController.h */,
+				D7A1EF0419A38B6D00827CDB /* MessagesViewController.m */,
+			);
+			path = buttom_NewsViews;
+			sourceTree = "<group>";
+		};
+		D7A1EEFF19A38B1800827CDB /* buttom_SettingViews */ = {
+			isa = PBXGroup;
+			children = (
+				D7A1EF0619A38B8500827CDB /* SettingViewController.h */,
+				D7A1EF0719A38B8500827CDB /* SettingViewController.m */,
+			);
+			path = buttom_SettingViews;
 			sourceTree = "<group>";
 		};
 		D7A848591998EF92009717E7 /* EGORefreshTable */ = {
@@ -603,6 +646,9 @@
 		D7D7ACCD198495FE007A0EDF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D7A1EEFD19A38B1800827CDB /* buttom_DealViews */,
+				D7A1EEFE19A38B1800827CDB /* buttom_NewsViews */,
+				D7A1EEFF19A38B1800827CDB /* buttom_SettingViews */,
 				D7FFF3691997164800BDAD88 /* AttendanceViews */,
 				D7FFF36A1997164800BDAD88 /* HumanResourceViews */,
 				D7FFF36B1997164800BDAD88 /* JobFlowViews */,
@@ -690,6 +736,8 @@
 			children = (
 				D7FFF3661997139C00BDAD88 /* HomeNavInitial.h */,
 				D7FFF3671997139C00BDAD88 /* HomeNavInitial.m */,
+				D7A1EEFA19A382E600827CDB /* BootViewController.h */,
+				D7A1EEFB19A382E600827CDB /* BootViewController.m */,
 			);
 			path = HomeInit;
 			sourceTree = "<group>";
@@ -932,8 +980,10 @@
 				D7E364F119925DCA008DD2D6 /* MainViewController.m in Sources */,
 				D7AA099D199F3F33009F7A2D /* UIButton+WebCache.m in Sources */,
 				D7A86EC91993AAC2009CE098 /* MyTextField.m in Sources */,
+				D7A1EF0519A38B6D00827CDB /* MessagesViewController.m in Sources */,
 				D7AA099C199F3F33009F7A2D /* SDWebImagePrefetcher.m in Sources */,
 				D79C59051989374900BF0DB7 /* MBProgressHUD.m in Sources */,
+				D7A1EF0219A38B5300827CDB /* DealViewController.m in Sources */,
 				D7FFF37F1997ABBC00BDAD88 /* AttendanceViewController.m in Sources */,
 				D7AA0997199F3F33009F7A2D /* SDWebImageCompat.m in Sources */,
 				D7A9FDB419867A39002DC6F9 /* DESObject.m in Sources */,
@@ -945,6 +995,7 @@
 				D7A848631998F343009717E7 /* colorWithHex.m in Sources */,
 				D7A9FDB319867A39002DC6F9 /* Base64.m in Sources */,
 				D7FFF38B1997AC1500BDAD88 /* SalaryManageViewController.m in Sources */,
+				D7A1EF0819A38B8500827CDB /* SettingViewController.m in Sources */,
 				D7FFF37C1997ABA100BDAD88 /* HumanResourceViewController.m in Sources */,
 				D79C5902198936B900BF0DB7 /* MBProgressController.m in Sources */,
 				D7A9FDB519867A39002DC6F9 /* NSString+MLExtensions.m in Sources */,
@@ -957,6 +1008,7 @@
 				D7A9FDB619867A39002DC6F9 /* ZipArchive.mm in Sources */,
 				D7A9FDB219867A39002DC6F9 /* API.m in Sources */,
 				D7FFF37619977F0400BDAD88 /* BusinessViewController.m in Sources */,
+				D7A1EEFC19A382E600827CDB /* BootViewController.m in Sources */,
 				D7AA0975199F3947009F7A2D /* RequestCacheService.m in Sources */,
 				D7AA0996199F3F33009F7A2D /* SDImageCache.m in Sources */,
 				D7A9A508198906D900329BED /* util.m in Sources */,
