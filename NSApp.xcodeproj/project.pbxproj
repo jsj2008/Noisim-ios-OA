@@ -20,6 +20,20 @@
 		D711E04B198405D8007D9C20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D711E033198405D7007D9C20 /* UIKit.framework */; };
 		D711E053198405D8007D9C20 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D711E051198405D8007D9C20 /* InfoPlist.strings */; };
 		D711E055198405D8007D9C20 /* NSAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D711E054198405D8007D9C20 /* NSAppTests.m */; };
+		D752050719A848FF00323106 /* chart.min.js in Sources */ = {isa = PBXBuildFile; fileRef = D75204F419A848FF00323106 /* chart.min.js */; };
+		D752050819A848FF00323106 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = D75204F519A848FF00323106 /* index.html */; };
+		D752050919A848FF00323106 /* TWRBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = D75204F719A848FF00323106 /* TWRBarChart.m */; };
+		D752050A19A848FF00323106 /* TWRChartBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D75204FA19A848FF00323106 /* TWRChartBuilder.m */; };
+		D752050C19A848FF00323106 /* TWRCircularChart.m in Sources */ = {isa = PBXBuildFile; fileRef = D75204FE19A848FF00323106 /* TWRCircularChart.m */; };
+		D752050D19A848FF00323106 /* TWRDataSet+Strings.m in Sources */ = {isa = PBXBuildFile; fileRef = D752050019A848FF00323106 /* TWRDataSet+Strings.m */; };
+		D752050E19A848FF00323106 /* TWRDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D752050219A848FF00323106 /* TWRDataSet.m */; };
+		D752050F19A848FF00323106 /* TWRLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = D752050419A848FF00323106 /* TWRLineChart.m */; };
+		D752051019A848FF00323106 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = D752050619A848FF00323106 /* UIColor+HexString.m */; };
+		D752051319A8493A00323106 /* TWRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D752051219A8493A00323106 /* TWRViewController.m */; };
+		D752051619A84A5400323106 /* TWRChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = D752051519A84A5400323106 /* TWRChartView.m */; };
+		D752051A19A84E3900323106 /* index.js in Sources */ = {isa = PBXBuildFile; fileRef = D752051919A84E3900323106 /* index.js */; };
+		D752051B19A8596A00323106 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = D752051919A84E3900323106 /* index.js */; };
+		D752051C19A85D4D00323106 /* chart.min.js in Resources */ = {isa = PBXBuildFile; fileRef = D75204F419A848FF00323106 /* chart.min.js */; };
 		D78FD8CC19A2413500864AF1 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D78FD8CB19A2413500864AF1 /* libsqlite3.0.dylib */; };
 		D79C58FE19890CA900BF0DB7 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = D79C58FD19890CA900BF0DB7 /* Config.m */; };
 		D79C5902198936B900BF0DB7 /* MBProgressController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79C5901198936B900BF0DB7 /* MBProgressController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -118,6 +132,28 @@
 		D711E050198405D8007D9C20 /* NSAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSAppTests-Info.plist"; sourceTree = "<group>"; };
 		D711E052198405D8007D9C20 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D711E054198405D8007D9C20 /* NSAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSAppTests.m; sourceTree = "<group>"; };
+		D75204F419A848FF00323106 /* chart.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = chart.min.js; sourceTree = "<group>"; };
+		D75204F519A848FF00323106 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		D75204F619A848FF00323106 /* TWRBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRBarChart.h; sourceTree = "<group>"; };
+		D75204F719A848FF00323106 /* TWRBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRBarChart.m; sourceTree = "<group>"; };
+		D75204F819A848FF00323106 /* TWRChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRChart.h; sourceTree = "<group>"; };
+		D75204F919A848FF00323106 /* TWRChartBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRChartBuilder.h; sourceTree = "<group>"; };
+		D75204FA19A848FF00323106 /* TWRChartBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRChartBuilder.m; sourceTree = "<group>"; };
+		D75204FD19A848FF00323106 /* TWRCircularChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRCircularChart.h; sourceTree = "<group>"; };
+		D75204FE19A848FF00323106 /* TWRCircularChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRCircularChart.m; sourceTree = "<group>"; };
+		D75204FF19A848FF00323106 /* TWRDataSet+Strings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TWRDataSet+Strings.h"; sourceTree = "<group>"; };
+		D752050019A848FF00323106 /* TWRDataSet+Strings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TWRDataSet+Strings.m"; sourceTree = "<group>"; };
+		D752050119A848FF00323106 /* TWRDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRDataSet.h; sourceTree = "<group>"; };
+		D752050219A848FF00323106 /* TWRDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRDataSet.m; sourceTree = "<group>"; };
+		D752050319A848FF00323106 /* TWRLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRLineChart.h; sourceTree = "<group>"; };
+		D752050419A848FF00323106 /* TWRLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRLineChart.m; sourceTree = "<group>"; };
+		D752050519A848FF00323106 /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
+		D752050619A848FF00323106 /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
+		D752051119A8493A00323106 /* TWRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRViewController.h; sourceTree = "<group>"; };
+		D752051219A8493A00323106 /* TWRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRViewController.m; sourceTree = "<group>"; };
+		D752051419A84A5400323106 /* TWRChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRChartView.h; sourceTree = "<group>"; };
+		D752051519A84A5400323106 /* TWRChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRChartView.m; sourceTree = "<group>"; };
+		D752051919A84E3900323106 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
 		D78FD8CB19A2413500864AF1 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		D79C58FC19890CA900BF0DB7 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		D79C58FD19890CA900BF0DB7 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
@@ -330,6 +366,7 @@
 		D711E036198405D7007D9C20 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D752051919A84E3900323106 /* index.js */,
 				D711E037198405D7007D9C20 /* NSApp-Info.plist */,
 				D711E038198405D8007D9C20 /* InfoPlist.strings */,
 				D711E03B198405D8007D9C20 /* main.m */,
@@ -354,6 +391,34 @@
 				D711E051198405D8007D9C20 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D75204F319A848FF00323106 /* TWRCharts */ = {
+			isa = PBXGroup;
+			children = (
+				D75204F419A848FF00323106 /* chart.min.js */,
+				D75204F519A848FF00323106 /* index.html */,
+				D75204F619A848FF00323106 /* TWRBarChart.h */,
+				D75204F719A848FF00323106 /* TWRBarChart.m */,
+				D75204F819A848FF00323106 /* TWRChart.h */,
+				D75204F919A848FF00323106 /* TWRChartBuilder.h */,
+				D75204FA19A848FF00323106 /* TWRChartBuilder.m */,
+				D75204FD19A848FF00323106 /* TWRCircularChart.h */,
+				D75204FE19A848FF00323106 /* TWRCircularChart.m */,
+				D75204FF19A848FF00323106 /* TWRDataSet+Strings.h */,
+				D752050019A848FF00323106 /* TWRDataSet+Strings.m */,
+				D752050119A848FF00323106 /* TWRDataSet.h */,
+				D752050219A848FF00323106 /* TWRDataSet.m */,
+				D752050319A848FF00323106 /* TWRLineChart.h */,
+				D752050419A848FF00323106 /* TWRLineChart.m */,
+				D752050519A848FF00323106 /* UIColor+HexString.h */,
+				D752050619A848FF00323106 /* UIColor+HexString.m */,
+				D752051119A8493A00323106 /* TWRViewController.h */,
+				D752051219A8493A00323106 /* TWRViewController.m */,
+				D752051419A84A5400323106 /* TWRChartView.h */,
+				D752051519A84A5400323106 /* TWRChartView.m */,
+			);
+			path = TWRCharts;
 			sourceTree = "<group>";
 		};
 		D79C58FF1989369F00BF0DB7 /* Commons */ = {
@@ -626,6 +691,7 @@
 		D7D7ACCC198495FE007A0EDF /* Uitils */ = {
 			isa = PBXGroup;
 			children = (
+				D75204F319A848FF00323106 /* TWRCharts */,
 				D7AA0976199F3F33009F7A2D /* ImageCache */,
 				D7A848601998F343009717E7 /* ColorWithHex */,
 				D7A848591998EF92009717E7 /* EGORefreshTable */,
@@ -891,9 +957,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D752051C19A85D4D00323106 /* chart.min.js in Resources */,
+				D752051B19A8596A00323106 /* index.js in Resources */,
 				D711E03A198405D8007D9C20 /* InfoPlist.strings in Resources */,
 				D7E364F619926767008DD2D6 /* MainViewController_Retina4.xib in Resources */,
 				D7A86EBF1993166A009CE098 /* icon_retina4.png in Resources */,
+				D752050819A848FF00323106 /* index.html in Resources */,
 				D7A86EBD1993166A009CE098 /* icon_.png in Resources */,
 				D7A86EC219932C67009CE098 /* ModuleList.plist in Resources */,
 				D711E042198405D8007D9C20 /* Images.xcassets in Resources */,
@@ -958,14 +1027,18 @@
 				D7AA099B199F3F33009F7A2D /* SDWebImageManager.m in Sources */,
 				D7FFF3791997A7B100BDAD88 /* JobFlowViewController.m in Sources */,
 				D7FFF3851997ABE800BDAD88 /* NotificationViewController.m in Sources */,
+				D752050F19A848FF00323106 /* TWRLineChart.m in Sources */,
 				D7AA0998199F3F33009F7A2D /* SDWebImageDecoder.m in Sources */,
 				D7A99CE31987DB0F002D64A1 /* KeychainItemWrapper.m in Sources */,
 				D7AA09A0199F3F33009F7A2D /* UIImage+WebP.m in Sources */,
+				D752050A19A848FF00323106 /* TWRChartBuilder.m in Sources */,
 				D7AA0994199F3F33009F7A2D /* MKAnnotationView+WebCache.m in Sources */,
 				D7A86EC619939DB5009CE098 /* LoginViewController.m in Sources */,
 				D711E040198405D8007D9C20 /* AppDelegate.m in Sources */,
 				D79C59121989461C00BF0DB7 /* BasicDbItem+DBOperationHelper.m in Sources */,
 				D7A8485F1998EF92009717E7 /* EGORefreshTableHeaderView.m in Sources */,
+				D752051319A8493A00323106 /* TWRViewController.m in Sources */,
+				D752051619A84A5400323106 /* TWRChartView.m in Sources */,
 				D7AA0999199F3F33009F7A2D /* SDWebImageDownloader.m in Sources */,
 				D7A99CDC1987D4BD002D64A1 /* SystemInfo.m in Sources */,
 				D7A9A5021989034600329BED /* LoginItem.m in Sources */,
@@ -990,13 +1063,18 @@
 				D7A8486619990D29009717E7 /* ListViewController.m in Sources */,
 				D7AA099E199F3F33009F7A2D /* UIImage+GIF.m in Sources */,
 				D7AA0995199F3F33009F7A2D /* NSData+GIF.m in Sources */,
+				D752050C19A848FF00323106 /* TWRCircularChart.m in Sources */,
 				D711E03C198405D8007D9C20 /* main.m in Sources */,
 				D7FFF3821997ABD100BDAD88 /* MyScheduleViewController.m in Sources */,
+				D752051019A848FF00323106 /* UIColor+HexString.m in Sources */,
 				D7A848631998F343009717E7 /* colorWithHex.m in Sources */,
 				D7A9FDB319867A39002DC6F9 /* Base64.m in Sources */,
+				D752050919A848FF00323106 /* TWRBarChart.m in Sources */,
 				D7FFF38B1997AC1500BDAD88 /* SalaryManageViewController.m in Sources */,
 				D7A1EF0819A38B8500827CDB /* SettingViewController.m in Sources */,
+				D752050E19A848FF00323106 /* TWRDataSet.m in Sources */,
 				D7FFF37C1997ABA100BDAD88 /* HumanResourceViewController.m in Sources */,
+				D752050719A848FF00323106 /* chart.min.js in Sources */,
 				D79C5902198936B900BF0DB7 /* MBProgressController.m in Sources */,
 				D7A9FDB519867A39002DC6F9 /* NSString+MLExtensions.m in Sources */,
 				D7FFF3881997ABFD00BDAD88 /* PerformanceViewController.m in Sources */,
@@ -1010,8 +1088,10 @@
 				D7FFF37619977F0400BDAD88 /* BusinessViewController.m in Sources */,
 				D7A1EEFC19A382E600827CDB /* BootViewController.m in Sources */,
 				D7AA0975199F3947009F7A2D /* RequestCacheService.m in Sources */,
+				D752051A19A84E3900323106 /* index.js in Sources */,
 				D7AA0996199F3F33009F7A2D /* SDImageCache.m in Sources */,
 				D7A9A508198906D900329BED /* util.m in Sources */,
+				D752050D19A848FF00323106 /* TWRDataSet+Strings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

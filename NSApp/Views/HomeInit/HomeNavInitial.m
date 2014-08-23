@@ -11,6 +11,7 @@
 #import "MessagesViewController.h"
 #import "SettingViewController.h"
 #import "DealViewController.h"
+#import "TWRViewController.h"
 #import "BaseNavigationViewController.h"
 
 #define TABBER_ITEM_TEXT_FONT_SIZE 14.0
@@ -49,7 +50,7 @@
     [self custumTabbarItem:nav3.tabBarItem];
     [nav1.tabBarItem setFinishedSelectedImage:[UIImage imageNamed:@"zixun_an.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"zixun.png"]];
     
-    SettingViewController *settingVC = [[SettingViewController alloc]init];
+    TWRViewController *settingVC = [[TWRViewController alloc]init];
     BaseNavigationViewController *nav4 = [[BaseNavigationViewController alloc]initWithRootViewController:settingVC];
     //    nav1.tabBarItem.image = [UIImage imageNamed:@"53-house.png"];
     nav4.tabBarItem.title = [titles objectAtIndex:3];
