@@ -50,7 +50,7 @@
     [self custumTabbarItem:nav3.tabBarItem];
     [nav1.tabBarItem setFinishedSelectedImage:[UIImage imageNamed:@"zixun_an.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"zixun.png"]];
     
-    TWRViewController *settingVC = [[TWRViewController alloc]init];
+    SettingViewController *settingVC = [[SettingViewController alloc]init];
     BaseNavigationViewController *nav4 = [[BaseNavigationViewController alloc]initWithRootViewController:settingVC];
     //    nav1.tabBarItem.image = [UIImage imageNamed:@"53-house.png"];
     nav4.tabBarItem.title = [titles objectAtIndex:3];

@@ -7,6 +7,7 @@
 //
 
 #import "MessagesViewController.h"
+#import "TWRViewController.h"
 
 @interface MessagesViewController ()
 
@@ -28,8 +29,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"消息";
-}
+    _TRVc = [[TWRViewController alloc]init];
+    [self.view addSubview:_TRVc.view];
 
+}
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

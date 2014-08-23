@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+
+@class TWRViewController;
 @interface MessagesViewController : UIViewController
 
+@property (strong, nonatomic)TWRViewController *TRVc;
 @end
