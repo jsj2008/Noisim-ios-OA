@@ -48,7 +48,8 @@
     // _chartView.userInteractionEnabled = YES;
     
     // Load chart by using a ChartJS javascript file
-    NSString *jsFilePath = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"js"];
+//    NSString *jsFilePath = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"js"];
+    NSString *jsFilePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"OA.bundle/js/index.js"]; 
     [_chartView setChartJsFilePath:jsFilePath];
     
     // Add the chart view to the controller's view

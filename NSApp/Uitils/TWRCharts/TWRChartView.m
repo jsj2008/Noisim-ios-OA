@@ -41,7 +41,8 @@
     self.delegate = self;
     // HTML index file
     
-    NSString *htmlFilePath = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
+//    NSString *htmlFilePath = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
+    NSString *htmlFilePath=[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"OA.bundle/html/index.html"];
     _htmlFilePath = htmlFilePath;
     self.userInteractionEnabled = NO;
 }
