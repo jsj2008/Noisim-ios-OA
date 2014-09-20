@@ -33,6 +33,11 @@
     [self.view addSubview:_TRVc.view];
 
 }
+//-(void)viewWillAppear:(BOOL)animated
+//{
+//    [super viewWillAppear:animated];
+//    [self.navigationController setNavigationBarHidden:YES];
+//}
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];

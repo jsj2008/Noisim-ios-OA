@@ -10,4 +10,6 @@
 
 @interface BootViewController : UIViewController
 
+@property(strong,nonatomic)UISegmentedControl *segment;
+@property(strong,nonatomic)UIViewController *vc;
 @end

@@ -59,6 +59,8 @@
 		D7A9A5021989034600329BED /* LoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A9A5011989034600329BED /* LoginItem.m */; };
 		D7A9A5051989044A00329BED /* NSObject+propertyList.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A9A5041989044A00329BED /* NSObject+propertyList.m */; };
 		D7A9A508198906D900329BED /* util.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A9A507198906D900329BED /* util.m */; };
+		D7A9EA3219B74B36006D12D5 /* HomeSegInitial.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A9EA3119B74B36006D12D5 /* HomeSegInitial.m */; };
+		D7A9EA3619B74F5D006D12D5 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A9EA3519B74F5D006D12D5 /* HMSegmentedControl.m */; };
 		D7A9FDB219867A39002DC6F9 /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A9FDA819867A39002DC6F9 /* API.m */; };
 		D7A9FDB319867A39002DC6F9 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A9FDAA19867A39002DC6F9 /* Base64.m */; };
 		D7A9FDB419867A39002DC6F9 /* DESObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A9FDAD19867A39002DC6F9 /* DESObject.m */; };
@@ -201,6 +203,10 @@
 		D7A9A5041989044A00329BED /* NSObject+propertyList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+propertyList.m"; sourceTree = "<group>"; };
 		D7A9A506198906D900329BED /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
 		D7A9A507198906D900329BED /* util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = util.m; sourceTree = "<group>"; };
+		D7A9EA3019B74B36006D12D5 /* HomeSegInitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeSegInitial.h; sourceTree = "<group>"; };
+		D7A9EA3119B74B36006D12D5 /* HomeSegInitial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeSegInitial.m; sourceTree = "<group>"; };
+		D7A9EA3419B74F5D006D12D5 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
+		D7A9EA3519B74F5D006D12D5 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
 		D7A9FDA719867A39002DC6F9 /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
 		D7A9FDA819867A39002DC6F9 /* API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = API.m; sourceTree = "<group>"; };
 		D7A9FDA919867A39002DC6F9 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
@@ -598,6 +604,15 @@
 			path = LoginItem;
 			sourceTree = "<group>";
 		};
+		D7A9EA3319B74F5D006D12D5 /* HMSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				D7A9EA3419B74F5D006D12D5 /* HMSegmentedControl.h */,
+				D7A9EA3519B74F5D006D12D5 /* HMSegmentedControl.m */,
+			);
+			path = HMSegmentedControl;
+			sourceTree = "<group>";
+		};
 		D7A9FDA619867A39002DC6F9 /* Compress */ = {
 			isa = PBXGroup;
 			children = (
@@ -683,6 +698,7 @@
 		D7D7ACCC198495FE007A0EDF /* Uitils */ = {
 			isa = PBXGroup;
 			children = (
+				D7A9EA3319B74F5D006D12D5 /* HMSegmentedControl */,
 				D75204F319A848FF00323106 /* TWRCharts */,
 				D7AA0976199F3F33009F7A2D /* ImageCache */,
 				D7A848601998F343009717E7 /* ColorWithHex */,
@@ -796,6 +812,8 @@
 				D7FFF3671997139C00BDAD88 /* HomeNavInitial.m */,
 				D7A1EEFA19A382E600827CDB /* BootViewController.h */,
 				D7A1EEFB19A382E600827CDB /* BootViewController.m */,
+				D7A9EA3019B74B36006D12D5 /* HomeSegInitial.h */,
+				D7A9EA3119B74B36006D12D5 /* HomeSegInitial.m */,
 			);
 			path = HomeInit;
 			sourceTree = "<group>";
@@ -1010,6 +1028,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7FFF38E1997AC2E00BDAD88 /* OthersViewController.m in Sources */,
+				D7A9EA3219B74B36006D12D5 /* HomeSegInitial.m in Sources */,
 				D79C59131989461C00BF0DB7 /* BasicDbItem.m in Sources */,
 				D7FFF373199774EC00BDAD88 /* BaseNavigationViewController.m in Sources */,
 				D7E364EE19925BB5008DD2D6 /* UIDevice+MYDevice.m in Sources */,
@@ -1021,6 +1040,7 @@
 				D7AA0998199F3F33009F7A2D /* SDWebImageDecoder.m in Sources */,
 				D7A99CE31987DB0F002D64A1 /* KeychainItemWrapper.m in Sources */,
 				D7AA09A0199F3F33009F7A2D /* UIImage+WebP.m in Sources */,
+				D7A9EA3619B74F5D006D12D5 /* HMSegmentedControl.m in Sources */,
 				D752050A19A848FF00323106 /* TWRChartBuilder.m in Sources */,
 				D7AA0994199F3F33009F7A2D /* MKAnnotationView+WebCache.m in Sources */,
 				D7A86EC619939DB5009CE098 /* LoginViewController.m in Sources */,
@@ -1202,6 +1222,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSApp/NSApp-Prefix.pch";
 				INFOPLIST_FILE = "NSApp/NSApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1216,6 +1237,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSApp/NSApp-Prefix.pch";
 				INFOPLIST_FILE = "NSApp/NSApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

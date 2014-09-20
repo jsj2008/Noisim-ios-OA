@@ -9,6 +9,11 @@
 #import "BootViewController.h"
 #import "HomeNavInitial.h"
 #import "AppDelegate.h"
+#import "HomeSegInitial.h"
+#import "DealViewController.h"
+#import "MessagesViewController.h"
+#import "MainViewController.h"
+#import "BaseNavigationViewController.h"
 
 
 @interface BootViewController ()
@@ -46,11 +51,25 @@
 - (void)initRootViews
 {
     [self.view removeFromSuperview];
-    UITabBarController *tabbar = [HomeNavInitial initTabBar];
-    UIWindow *aWindow =(UIWindow*)[[UIApplication sharedApplication].windows objectAtIndex:0];
-    aWindow.rootViewController = tabbar;
-    tabbar.delegate = appDelegate;
-    [[UIApplication sharedApplication] setStatusBarHidden:NO];
+    _segment = [HomeSegInitial initSegmentControl];
+    [_segment addTarget:self action:@selector(segmentedControlChangedValue:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:_segment];
+    _vc = [[HomeSegInitial views]objectAtIndex:0];
+    [self.view addSubview:_vc.view];
+//    UITabBarController *tabbar = [HomeNavInitial initTabBar];
+//    UIWindow *aWindow =(UIWindow*)[[UIApplication sharedApplication].windows objectAtIndex:0];
+//    aWindow.rootViewController = nav;
+//    self.title = @"主页";
+//;    tabbar.delegate = appDelegate;
+//    [[UIApplication sharedApplication] setStatusBarHidden:NO];
+}
+- (void)segmentedControlChangedValue:(HMSegmentedControl *)segmentedControl {
+    
+	NSLog(@"Selected index %i (via UIControlEventValueChanged)", segmentedControl.selectedIndex);
+    [_vc.view removeFromSuperview];
+    _vc = [[HomeSegInitial views]objectAtIndex:segmentedControl.selectedIndex];
+    [self.view addSubview:_vc.view];
+
 }
 - (void)viewDidLoad
 {
@@ -58,7 +77,12 @@
     // Do any additional setup after loading the view.
     [self initRootViews];
 }
-
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO];
+    self.title=@"主页";
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

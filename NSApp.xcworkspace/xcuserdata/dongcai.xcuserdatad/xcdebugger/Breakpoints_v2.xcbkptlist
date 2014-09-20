@@ -73,13 +73,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NSApp/Uitils/TWRCharts/TWRChartView.m"
-            timestampString = "430470281.878693"
+            filePath = "NSApp/Views/MainViewController/MainViewController.m"
+            timestampString = "431745373.982971"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
-            landmarkName = "-webView:shouldStartLoadWithRequest:navigationType:"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "-didClickBusinessMate:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -89,13 +89,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NSApp/Uitils/TWRCharts/TWRChartView.m"
-            timestampString = "430470281.878693"
+            filePath = "NSApp/Views/BusinessViews/BusinessViewController.m"
+            timestampString = "431453203.412393"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
-            landmarkName = "-loadIndex"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "-viewWillAppear:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -105,13 +105,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NSApp/Uitils/TWRCharts/TWRChartView.m"
-            timestampString = "430470281.878693"
+            filePath = "NSApp/Views/MainViewController/MainViewController.m"
+            timestampString = "431745532.04447"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "-didMoveToSuperview"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "-didClickBusinessMate:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -122,12 +122,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NSApp/Uitils/TWRCharts/TWRViewController.m"
-            timestampString = "430470281.878693"
+            timestampString = "431766141.744979"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "-loadPieChart"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

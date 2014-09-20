@@ -21,6 +21,8 @@
 
 #import "MainViewController.h"
 #import "BusinessViewController.h"
+#import "BaseNavigationViewController.h"
+#import "BootViewController.h"
 
 @interface MainViewController ()
 
@@ -82,7 +84,10 @@
 #pragma btn-action
 - (void)didClickBusinessMate:(id)sender
 {
-    [self.navigationController pushViewController:_businessView animated:YES];
+    BootViewController *t = (BootViewController *)self.view.superview.nextResponder;
+    if(t)
+        [t.navigationController pushViewController:_businessView animated:YES];
+//    [nav pushViewController:_businessView animated:YES];
 }
 - (void)didClickJobFlow:(id)sender
 {
@@ -122,10 +127,10 @@
     [self initBtn];
     [self initViews];
 }
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES];
-}
+//-(void)viewWillAppear:(BOOL)animated{
+//    [super viewWillAppear:animated];
+//    [self.navigationController setNavigationBarHidden:YES];
+//}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

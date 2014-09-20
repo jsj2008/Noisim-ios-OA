@@ -124,12 +124,19 @@
     htmlString = [htmlString stringByReplacingOccurrencesOfString:@"<canvas></canvas>" withString:canvasString];
     
     // Load it!
+//    double delayInSeconds = 5.8f;
+//    dispatch_time_t initTime = dispatch_time(DISPATCH_TIME_NOW,(int64_t)(delayInSeconds*NSEC_PER_SEC));
+//    dispatch_after(initTime,dispatch_get_main_queue(),^(void){
+//        [self loadHTMLString:htmlString baseURL:[[NSBundle mainBundle] bundleURL]];
+//    });
+//    [self loadHTMLString:htmlString baseURL:[NSURL URLWithString:@"file://Users/dongcai/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/DB449D94-B3BF-49CB-A028-8B9B0D17F3A2/NSApp.app/"]];
     [self loadHTMLString:htmlString baseURL:[[NSBundle mainBundle] bundleURL]];
 }
 
 #pragma mark - Web View Delegate methods
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView {
+    NSLog(@"载入结束...");
     [self stringByEvaluatingJavaScriptFromString:_jsFileString];
 }
 
@@ -144,5 +151,26 @@
     }
     return YES;
 }
-
+-(void)webViewDidStartLoad:(UIWebView *)webView
+{
+    
+    NSLog(@"开始载入...");
+}
+-(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    NSLog(@"错误：%@",error);
+    [self stringByEvaluatingJavaScriptFromString:_jsFileString];
+//    if (!([error.domain isEqualToString:@"WebKitErrorDomain"] && error.code == 102))
+//    {
+//        if (!(([error.domain isEqualToString:@"NSURLErrorDomain"] && error.code == -999) ||
+//              ([error.domain isEqualToString:@"WebKitErrorDomain"] && error.code == 102)))
+//        {
+//            [self dismissWithError:error animated:YES];
+//        }
+//    }
+}
+-(void)dealloc
+{
+    self.delegate = nil;
+}
 @end

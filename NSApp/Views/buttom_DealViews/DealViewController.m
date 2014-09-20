@@ -30,7 +30,11 @@
     // Do any additional setup after loading the view.
     self.title = @"待办";
 }
-
+//-(void)viewWillAppear:(BOOL)animated
+//{
+//    [super viewWillAppear:animated];
+//    [self.navigationController setNavigationBarHidden:YES];
+//}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

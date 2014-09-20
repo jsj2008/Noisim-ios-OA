@@ -83,7 +83,8 @@
 -(void)finish:(id)data{
     NSLog(@"%@",data);
     _appView= [[BootViewController alloc] init];
-    [self presentModalViewController:_appView animated:NO];
+    [self.navigationController pushViewController:_appView animated:NO];
+//    [self presentModalViewController:_appView animated:NO];
 //    [self presentModalViewController:_mainView animated:NO];
 }
 -(void)fail:(id)data{

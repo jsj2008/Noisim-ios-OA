@@ -42,7 +42,7 @@
     [_segmentedControl addTarget:self action:@selector(switchChart:) forControlEvents:UIControlEventValueChanged];
     
     // Chart View
-    _chartView = [[TWRChartView alloc] initWithFrame:CGRectMake(35, 64, 240, 260)];
+    _chartView = [[TWRChartView alloc] initWithFrame:CGRectMake(10, 80, 300, 360)];
     _chartView.backgroundColor = [UIColor clearColor];
     // User interaction is disabled by default. You can enable it again if you want
     // _chartView.userInteractionEnabled = YES;
